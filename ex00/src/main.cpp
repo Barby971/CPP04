@@ -6,11 +6,12 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 16:29:40 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/08/31 19:26:10 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../lib/Cat.hpp"
+#include "../lib/Animal.hpp"
 #include "../lib/Dog.hpp"
 #include "../lib/WrongAnimal.hpp"
 #include "../lib/WrongCat.hpp"
@@ -26,14 +27,20 @@ int main()
 	d->makeSound();
 	c->makeSound();
 	anim->makeSound();
-
+	
 	const WrongAnimal	*Wanim = new WrongAnimal();
 	const WrongAnimal	*Wcat = new WrongCat();
 	
+	std::cout << Wanim->getType() << " " << std::endl;
+	std::cout << Wcat->getType() << " " << std::endl;
 	Wanim->makeSound();
 	Wcat->makeSound();
 	
-	delete anim, d, c, Wanim, Wcat;
+	delete c;
+	delete d;
+	delete anim;
+	delete Wcat;
+	delete Wanim;
 	
 	return(0);
 }

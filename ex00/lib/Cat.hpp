@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:19 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 16:06:20 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/08/31 19:09:12 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Cat: public Animal
 
         Cat &operator=(const Cat &c);
 
-		void	makeSound(void);
+		virtual void	makeSound(void)const;
 };
 
 #endif

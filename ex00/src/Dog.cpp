@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:45 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 16:39:08 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/08/31 19:10:22 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Dog::Dog() : Animal()
 {
-	_type = "";
+	_type = "Dog";
     std::cout << BLUE "Dog default constructor called" DEFAULT << std::endl;
 };
 
-Dog::Dog(std::string type) : Animal(type)
+Dog::Dog(std::string type) : Animal("Dog")
 {
     _type = type;
     std::cout << BLUE "Dog parametric constructor -> called" DEFAULT << std::endl;
@@ -49,7 +49,7 @@ Dog::~Dog()
     std::cout << BLUE "Dog destructor -> called" DEFAULT << std::endl;
 };
 
-void	Dog::makeSound(void)
+void	Dog::makeSound(void) const
 {
 	std::cout << "🐶🐶🐶 Dogs like barking 🐶🐶🐶" << std::endl;
 }

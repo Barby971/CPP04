@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:13 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 16:40:09 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/08/31 19:22:20 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,16 @@ class Animal
     public:
         Animal();
         Animal(std::string name);
-        Animal(const Animal &Animal);
+        Animal(Animal const &Animal);
         virtual ~Animal();
 
-        Animal &operator=(const Animal &c);
+        Animal &operator=(Animal const &c);
 
-		std::string const	&getType(void) const;
-		virtual void		makeSound(void);
+		std::string     getType(void) const;
+		virtual void    makeSound(void) const;
 	
 	protected:
 		std::string _type;
 };
-
 
 #endif

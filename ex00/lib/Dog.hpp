@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:25 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 16:06:30 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/08/31 19:09:08 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Dog: public Animal
 
         Dog &operator=(const Dog &c);
 
-		void	makeSound(void);
+		virtual void	makeSound(void)const;
 };
 
 #endif
