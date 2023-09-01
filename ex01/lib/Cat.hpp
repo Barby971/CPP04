@@ -6,7 +6,30 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:19 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/30 15:27:20 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 11:29:01 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef CAT_HPP
+#define CAT_HPP
+
+#include "Animal.hpp"
+#include "Brain.hpp"
+
+class Cat: public Animal
+{
+    public:
+        Cat();
+        Cat(std::string type);
+        Cat(const Cat &Cat);
+        virtual ~Cat();
+
+        Cat &operator=(const Cat &c);
+
+		virtual void	makeSound(void)const;
+        
+    private:
+        Brain   *_brain;
+};
+
+#endif

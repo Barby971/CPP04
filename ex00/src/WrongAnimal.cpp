@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:53 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 19:23:38 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:08:33 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 WrongAnimal::WrongAnimal()
 {
 	_type = "";
-    std::cout << RED "Wrong Animal default constructor called" DEFAULT << std::endl;
+    std::cout << RED "Wrong Animal Default Constructor called" DEFAULT << std::endl;
 };
 
 WrongAnimal::WrongAnimal(std::string type)
 {
     _type = type;
-    std::cout << RED "Wrong Animal Parametric constructor -> called" DEFAULT << std::endl;
+    std::cout << RED "Wrong Animal Parametric Constructor -> called" DEFAULT << std::endl;
 };
 
 WrongAnimal::WrongAnimal(const WrongAnimal &a)
 {
-    std::cout << RED "Wrong Animal Copy constructor -> called: " DEFAULT << std::endl;
+    std::cout << RED "Wrong Animal Copy Constructor -> called: " DEFAULT << std::endl;
     _type = a._type;
 };
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal &a)
 {
-    std::cout << RED "Wrong Animal Assignement operator -> called" DEFAULT << std::endl; 
+    std::cout << RED "Wrong Animal Assignement Operator -> called" DEFAULT << std::endl; 
     if (this != &a)
         _type = a._type;
     return (*this);
@@ -50,5 +50,5 @@ std::string WrongAnimal::getType(void) const
 
 void	WrongAnimal::makeSound(void) const
 {
-	std::cout << "All animals scream 🥲 " << std::endl;
+	std::cout << "🦄🐲🪰 All wrong animals scream too 🪰🐲🦄" << std::endl << std::endl;
 }

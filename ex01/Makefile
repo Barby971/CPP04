@@ -24,7 +24,7 @@ DEPS		= $(addprefix $(OBJS_DIR), $(SRCS_NAME:%.cpp=%.d))
 
 # Headers list
 HEADER_DIR	:=	/lib/
-HEADER_NAME	:=	Animal.hpp
+HEADER_NAME	:=	Animal.hpp \
 			WrongAnimal.hpp \
 			Dog.hpp \
 			Cat.hpp \

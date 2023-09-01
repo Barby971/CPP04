@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 19:26:10 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:05:42 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,22 @@ int main()
 	const Animal	*d = new Dog();
 	const Animal	*c = new Cat();
 	
+	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
+	std::cout << "  TEST RIGHT ANIMALS " << std::endl;
+	std::cout << "--------------------------------" DEFAULT<< std::endl << std::endl;
+	
 	std::cout << d->getType() << " " << std::endl;
 	std::cout << c->getType() << " " << std::endl;
 	d->makeSound();
 	c->makeSound();
 	anim->makeSound();
-	
+
 	const WrongAnimal	*Wanim = new WrongAnimal();
 	const WrongAnimal	*Wcat = new WrongCat();
 	
+	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
+	std::cout << "  TEST WRONG ANIMALS " << std::endl;
+	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
 	std::cout << Wanim->getType() << " " << std::endl;
 	std::cout << Wcat->getType() << " " << std::endl;
 	Wanim->makeSound();
