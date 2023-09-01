@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:30:28 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:06:38 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:27:40 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ Brain& Brain::operator=(const Brain &a)
     if (this != &a)
     {
         for (int i = 0 ; i < 100 ; i++)
-        _ideas[i] = a._ideas[i];
+            _ideas[i] = a._ideas[i];
     }
     return (*this);
 };

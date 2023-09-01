@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:30 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 19:22:31 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:19:19 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class WrongAnimal
         WrongAnimal();
         WrongAnimal(std::string type);
         WrongAnimal(const WrongAnimal &wrongAnimal);
-        virtual ~WrongAnimal();
+        ~WrongAnimal();
 
         WrongAnimal &operator=(const WrongAnimal &c);
 

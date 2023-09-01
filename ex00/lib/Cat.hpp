@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:19 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 19:09:12 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:18:49 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Cat: public Animal
         Cat();
         Cat(std::string type);
         Cat(const Cat &Cat);
-        ~Cat();
+        virtual ~Cat();
 
         Cat &operator=(const Cat &c);
 

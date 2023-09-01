@@ -6,7 +6,7 @@ NAME	= PolyProtect
 # Source files list
 SRCS_DIR 	= src/
 
-SRCS_NAME 	= Animal.cpp \
+SRCS_NAME 	= AAnimal.cpp \
 			WrongAnimal.cpp \
 			Dog.cpp \
 			Cat.cpp \
@@ -23,12 +23,11 @@ DEPS		= $(addprefix $(OBJS_DIR), $(SRCS_NAME:%.cpp=%.d))
 
 # Headers list
 HEADER_DIR	:=	/lib/
-HEADER_NAME	:=	Animal.hpp \
+HEADER_NAME	:=	AAnimal.hpp \
 			WrongAnimal.hpp \
 			Dog.hpp \
 			Cat.hpp \
-			WrongCat.hpp \
-			main.hpp
+			WrongCat.hpp
 
 HEADER		:=	-I.$(HEADER_DIR)
 

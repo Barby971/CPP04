@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:10:50 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:10:06 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,20 @@
 
 int main()
 {
-	const Animal	*anim = new Animal;
-	const Animal	*d = new Dog();
-	const Animal	*c = new Cat();
+	const Animal	*anim[10];
 	
-	std::cout << d->getType() << " " << std::endl;
-	std::cout << c->getType() << " " << std::endl;
-	d->makeSound();
-	c->makeSound();
-	anim->makeSound();
+	for (int i = 0 ; i < 10 ; i++)
+	{
+		for (i = 0 ; i < 5 ; i++)
+			anim[i] = new Cat();
+		for (i = 5 ; i < 10 ; i++)
+		anim[i] = new Dog();
+	}
 		
-	delete c;
-	delete d;
-	delete anim;
+	for (int i = 0 ; i < 10 ; i++)
+		delete anim[i];
 
-	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
+	/*std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY DOG " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
 	const Dog basic;
@@ -48,7 +47,7 @@ int main()
 	Cat acid;
 	Cat tempo;
 
-	tempo = acid;
+	tempo = acid;*/
 
 	return(0);
 }

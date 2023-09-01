@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:45 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:35:03 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 19:21:13 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ Dog& Dog::operator=(const Dog &a)
     std::cout << GREEN "Dog Assignement Operator -> called" DEFAULT << std::endl; 
     if (this != &a)
     {
-        AAnimal::operator=(a);
+        _type = a._type;
         if (_brain)
             delete _brain;
         if (a._brain)

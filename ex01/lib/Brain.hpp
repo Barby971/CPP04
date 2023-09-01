@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:28:11 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 10:10:55 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:26:38 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Brain
         virtual ~Brain();
 
         Brain &operator=(Brain const &c);
-	
+
 	private:
 		std::string _ideas[100];
 };

@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:37:00 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:53:51 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main()
 	delete d;
 	//delete anim;
 
-	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
+	/*std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY DOG " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
 	const Dog basic;
@@ -48,7 +48,7 @@ int main()
 	Cat acid;
 	Cat tempo;
 
-	tempo = acid;
+	tempo = acid;*/
 
 	return(0);
 }

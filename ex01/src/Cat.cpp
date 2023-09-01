@@ -6,7 +6,7 @@
 /*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:40 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:10:01 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:04:15 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ Cat::Cat(const Cat &a) : Animal()
         _brain = new Brain(*a._brain);
     else
         _brain = NULL;
+    _type = a._type;
 };
 
 Cat& Cat::operator=(const Cat &a)
@@ -46,7 +47,7 @@ Cat& Cat::operator=(const Cat &a)
     std::cout << MAGENTA "Cat Assignement Operator -> called" DEFAULT << std::endl; 
     if (this != &a)
     {
-        Animal::operator=(a);
+        _type = a._type;
         if (_brain)
             delete _brain;
         if (a._brain)
