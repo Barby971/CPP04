@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/02 11:42:17 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 18:33:20 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int main()
 {
-	//const AAnimal	*anim = new AAnimal;
+	/*//const AAnimal	*anim = new AAnimal;
 	const AAnimal	*d = new Dog();
 	const AAnimal	*c = new Cat();
 	
@@ -31,24 +31,22 @@ int main()
 		
 	delete c;
 	delete d;
-	//delete anim;
+	//delete anim;*/
 
-	/*std::cout << std::endl << BOLD "--------------------------------" << std::endl;
+	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY DOG " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
-	const Dog basic;
+	Dog basic;
 	{
 		Dog tmp = basic;
 	}
-
 	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY CAT " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
 	
 	Cat acid;
 	Cat tempo;
-
-	tempo = acid;*/
+	tempo = acid;
 
 	return(0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:48 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/02 11:35:55 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 18:29:19 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int main()
 {
-	/*const Animal	*anim[10];
+	const Animal	*anim[10];
 	
 	for (int i = 0 ; i < 10 ; i++)
 	{
@@ -36,25 +36,28 @@ int main()
 	}
 		
 	for (int i = 0 ; i < 10 ; i++)
-		delete anim[i];*/
-
+		delete anim[i];
+	
+	/*Dog truc;
+	Dog temp (truc);
+	temp.makeSound();*/
+/*
 	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY DOG " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
-	const Dog basic;
+	Dog basic;
 	{
 		Dog tmp = basic;
 		tmp.makeSound();
 	}
-
+	
 	std::cout << std::endl << BOLD "--------------------------------" << std::endl;
 	std::cout << "     TEST DEEP COPY CAT " << std::endl;
 	std::cout << "--------------------------------" DEFAULT << std::endl << std::endl;
-	
 	Cat acid;
 	Cat tempo;
 	tempo = acid;
-	tempo.makeSound();
+	tempo.makeSound();*/
 
 	return(0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:45 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/02 11:40:49 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 18:31:05 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,18 +36,15 @@ std::ostream &operator<<(std::ostream &c, const Dog &a)
 Dog::Dog(const Dog &a) : AAnimal()
 {
     std::cout << GREEN "Dog Copy Constructor -> called: " DEFAULT << a << std::endl;
-     if (a._brain)
-        _brain = new Brain(*a._brain);
-    else
-        _brain = NULL;
+    _brain = NULL;
     *this = a;
-};
+    };
 
 Dog& Dog::operator=(const Dog &a)
 {
     std::cout << GREEN "Dog Assignement Operator -> called" DEFAULT << std::endl;
     if (this != &a)
-    {
+    { 
         _type = a._type;
         if (_brain)
             delete _brain;

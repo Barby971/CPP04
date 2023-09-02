@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:40 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/02 11:39:57 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 18:38:40 by blefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,7 @@ std::ostream &operator<<(std::ostream &c, const Cat &a)
 Cat::Cat(const Cat &a) : Animal()
 {
     std::cout << MAGENTA "Cat copy Constructor -> called: " DEFAULT << a << std::endl;
-    if (a._brain)
-        _brain = new Brain(*a._brain);
-    else
-        _brain = NULL;
+    _brain = NULL;
     *this = a;
 };
 
