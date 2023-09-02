@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:53 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:08:33 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 10:36:39 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ WrongAnimal::WrongAnimal(std::string type)
 WrongAnimal::WrongAnimal(const WrongAnimal &a)
 {
     std::cout << RED "Wrong Animal Copy Constructor -> called: " DEFAULT << std::endl;
-    _type = a._type;
+    *this = a;
 };
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal &a)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:30 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 16:19:19 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 10:40:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class WrongAnimal
         WrongAnimal();
         WrongAnimal(std::string type);
         WrongAnimal(const WrongAnimal &wrongAnimal);
-        ~WrongAnimal();
+        virtual ~WrongAnimal();
 
         WrongAnimal &operator=(const WrongAnimal &c);
 

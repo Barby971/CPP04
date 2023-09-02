@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:40 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 17:05:54 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 11:40:41 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,18 @@ std::ostream &operator<<(std::ostream &c, const Cat &a)
 Cat::Cat(const Cat &a) : AAnimal()
 {
     std::cout << MAGENTA "Cat copy Constructor -> called: " DEFAULT << a << std::endl;
-    if (a._brain)
+     if (a._brain)
         _brain = new Brain(*a._brain);
     else
         _brain = NULL;
-    _type = a._type;
+    *this = a;
 };
 
 Cat& Cat::operator=(const Cat &a)
 {
-    std::cout << MAGENTA "Cat Assignement Operator -> called" DEFAULT << std::endl; 
+    std::cout << MAGENTA "Cat Assignement Operator -> called" DEFAULT << std::endl;
     if (this != &a)
-    {
+    { 
         _type = a._type;
         if (_brain)
             delete _brain;

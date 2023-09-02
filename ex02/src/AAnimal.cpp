@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:37 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:36:08 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 10:49:39 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ AAnimal::AAnimal(std::string type)
 AAnimal::AAnimal(const AAnimal &a)
 {
     std::cout << BLUE "AAnimal Copy Constructor -> called: " DEFAULT << std::endl;
-    _type = a._type;
+    *this = a;
 };
 
 AAnimal& AAnimal::operator=(const AAnimal &a)

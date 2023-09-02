@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:33 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/08/31 19:22:25 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 10:41:50 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class WrongCat : public WrongAnimal
         WrongCat();
         WrongCat(std::string type);
         WrongCat(const WrongCat &wrongCat);
-        ~WrongCat();
+        virtual ~WrongCat();
 
         WrongCat &operator=(const WrongCat &c);
 

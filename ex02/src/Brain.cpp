@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:30:28 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:06:38 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 11:19:40 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,10 @@ Brain::Brain(std::string ideas[100])
         _ideas[i] = ideas[i];
 };
 
-Brain::Brain(const Brain &c)
+Brain::Brain(const Brain &a)
 {
     std::cout << BOLD "Brain Copy Constructor -> called " DEFAULT << std::endl;
-    for (int i = 0 ; i < 100 ; i++)
-        _ideas[i] = c._ideas[i];
+    *this = a;
 };
 
 Brain& Brain::operator=(const Brain &a)
@@ -39,7 +38,7 @@ Brain& Brain::operator=(const Brain &a)
     if (this != &a)
     {
         for (int i = 0 ; i < 100 ; i++)
-        _ideas[i] = a._ideas[i];
+            _ideas[i] = a._ideas[i];
     }
     return (*this);
 };

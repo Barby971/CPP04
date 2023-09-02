@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blefebvr <blefebvr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 15:27:56 by blefebvr          #+#    #+#             */
-/*   Updated: 2023/09/01 12:09:18 by blefebvr         ###   ########.fr       */
+/*   Updated: 2023/09/02 10:36:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ WrongCat::WrongCat(std::string type) : WrongAnimal("WrongCat")
 WrongCat::WrongCat(const WrongCat &a) : WrongAnimal()
 {
     std::cout << YELLOW "WrongCat copy Constructor -> called: " DEFAULT << std::endl;
-    _type = a._type;
+    *this = a;
 };
 
 WrongCat& WrongCat::operator=(const WrongCat &a)
